@@ -76,19 +76,30 @@ async function openCourse(id) {
         let res = await fetch('/api/api?id=' + id);
         let json = await res.json();
 
-        // Handle the specific structure of your API
+        if (json.error) {
+            throw new Error(json.error + (json.hint ? " - " + json.hint : ""));
+        }
+
         let data = json.data || json;
 
-        if (data.children && Array.isArray(data.children)) {
-            // Your API returns a root object with subjects in 'children'
+        // --- SMART EXTRACTION ---
+        // Agar data array hai aur usme sirf 1 item hai, toh uske children check karein
+        if (Array.isArray(data) && data.length === 1 && data[0].children) {
+            root = data[0].children;
+        }
+        // Agar data object hai aur usme children hain
+        else if (!Array.isArray(data) && data.children) {
             root = data.children;
-        } else if (Array.isArray(data)) {
+        }
+        // Normal Array
+        else if (Array.isArray(data)) {
             root = data;
-        } else {
+        }
+        else {
             root = [data];
         }
 
-        document.getElementById("title").innerText = "All Subjects";
+        document.getElementById("title").innerText = "Subjects";
         renderList(root);
         historyStack = [];
         updateURL();
@@ -96,9 +107,10 @@ async function openCourse(id) {
         console.error("Fetch Error:", err);
         document.getElementById("main").innerHTML = `
             <div style="padding:40px; text-align:center; color:#ff4757;">
-                <h3>Oops! Subjects not loading.</h3>
-                <p>The API at sangam.free.nf might be blocking the request.</p>
-                <button onclick="openCourse('${id}')" style="background:#00ffcc; border:none; padding:10px 20px; border-radius:5px; cursor:pointer; font-weight:bold;">Try Again</button>
+                <h3>⚠️ Loading Failed</h3>
+                <p style="font-size:12px; color:#aaa;">${err.message}</p>
+                <br>
+                <button onclick="openCourse('${id}')" style="background:#00ffcc; border:none; padding:10px 20px; border-radius:5px; cursor:pointer; font-weight:bold; color:#000;">Retry</button>
             </div>`;
     }
 }
