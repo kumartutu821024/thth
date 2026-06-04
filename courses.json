@@ -1,0 +1,299 @@
+{
+    "data": [
+        {
+            "_id": "69e3af663bf8ae9d98041a55",
+            "name": "\u0938\u092b\u0932\u0924\u093e \u092c\u0948\u091a - 11th Batch Up Board 2027",
+            "strikeoutPrice": 2999,
+            "courseImage": "https:\/\/image-store.blr1.cdn.digitaloceanspaces.com\/courses\/images\/1777813735143_133740.jpg",
+            "packages": [
+                {
+                    "price": 799,
+                    "durationInMonths": 12,
+                    "isDefault": true,
+                    "_id": "6a0de1a9d272abefa9392684"
+                }
+            ],
+            "additionalCourses": [],
+            "purchased": false,
+            "isBlocked": false
+        },
+        {
+            "_id": "69d886ee01265eed182f0a3f",
+            "name": "\u091f\u0949\u092a\u0930 \u092c\u0948\u091a - Class 10th Up Board 2026-27",
+            "strikeoutPrice": 0,
+            "courseImage": "https:\/\/image-store.blr1.cdn.digitaloceanspaces.com\/courses\/images\/1776529565951_125739.jpg",
+            "packages": [
+                {
+                    "price": 0,
+                    "durationInMonths": 12,
+                    "isDefault": true,
+                    "_id": "69f1841c959e5745e4b00843"
+                }
+            ],
+            "additionalCourses": [],
+            "purchased": false,
+            "isBlocked": false
+        },
+        {
+            "_id": "69d800551b65fd3258859e4f",
+            "name": "demo course for testing",
+            "strikeoutPrice": 100,
+            "courseDescription": "<p>test<\/p>",
+            "courseImage": "https:\/\/image-store.blr1.cdn.digitaloceanspaces.com\/courses\/images\/1775763541178_WhatsApp Image 2026-02-12 at 1.24.21 PM (1).jpeg",
+            "packages": [
+                {
+                    "price": 99,
+                    "durationInMonths": 3,
+                    "isDefault": true,
+                    "_id": "69d800551b65fd3258859e51"
+                }
+            ],
+            "additionalCourses": [],
+            "purchased": false,
+            "isBlocked": false
+        },
+        {
+            "_id": "69c21bdcc2d0768e443f15e7",
+            "name": "\u0909\u0921\u093c\u093e\u0928 \u092c\u0948\u091a - 2027 9th Class Up Board",
+            "strikeoutPrice": 0,
+            "courseImage": "https:\/\/image-store.blr1.cdn.digitaloceanspaces.com\/courses\/images\/1774328796563_WhatsApp Image 2026-03-24 at 10.18.43.jpeg",
+            "packages": [
+                {
+                    "price": 0,
+                    "durationInMonths": 12,
+                    "isDefault": true,
+                    "_id": "6a0e7339d89aa7db1a98c09b"
+                }
+            ],
+            "additionalCourses": [],
+            "purchased": false,
+            "isBlocked": false
+        },
+        {
+            "_id": "697cc0a6c7a835952ed60208",
+            "name": "\u0932\u0915\u094d\u0937\u094d\u092f \u092c\u0948\u091a - CUET BATCH 2026 FOR ALL BOARD",
+            "strikeoutPrice": 1599,
+            "courseImage": "https:\/\/image-store.blr1.cdn.digitaloceanspaces.com\/courses\/images\/1769783462070_CUET COURSE POSTER HD (1).png",
+            "packages": [
+                {
+                    "price": 649,
+                    "durationInMonths": 6,
+                    "isDefault": true,
+                    "_id": "69c392d6dab50bf1a28191c7"
+                }
+            ],
+            "additionalCourses": [],
+            "purchased": false,
+            "isBlocked": false
+        },
+        {
+            "_id": "697a0890f708feadceaf8e29",
+            "name": "\u091f\u0949\u092a\u0930 \u092c\u0948\u091a - Class 10th Batch 2026-27",
+            "strikeoutPrice": 1198,
+            "courseImage": "https:\/\/image-store.blr1.cdn.digitaloceanspaces.com\/courses\/images\/1769605401277_topper  batch price poster hd (1).png",
+            "packages": [
+                {
+                    "price": 999,
+                    "durationInMonths": 12,
+                    "isDefault": true,
+                    "_id": "69fb5a28689bd1b69393a1d2"
+                }
+            ],
+            "courseDescription": "<p>\u2705 \u092c\u093f\u0939\u093e\u0930 \u0915\u0947 \u0909\u0924\u094d\u0915\u0943\u0937\u094d\u091f \u0936\u093f\u0915\u094d\u0937\u0915\u094b\u0902 \u0915\u0940 \u091f\u0940\u092e&nbsp;<\/p><p>\u2705 \u092a\u094d\u0930\u0924\u094d\u092f\u0947\u0915 \u0935\u093f\u0937\u092f\u094b\u0902 \u0915\u093e \u0905\u0932\u0917 \u0905\u0932\u0917 live class&nbsp;<\/p><p>\u2705 \u092a\u094d\u0930\u0924\u094d\u092f\u0947\u0915 \u0935\u093f\u0937\u092f\u094b\u0902 \u0915\u093e special \u0928\u094b\u091f\u094d\u0938&nbsp;<\/p><p>\u2705 \u0939\u093er \u090f\u0915 \u0935\u093f\u0937\u092f \u092e\u0947\u0902 \u0938\u093e\u092a\u094d\u0924\u093e\u0939\u093f\u0915 \u091f\u0947\u0938\u094d\u091f \u0938\u0940\u0930\u0940\u091c&nbsp;<\/p><p>\u2705 doubt counter \u0915\u0940 \u090f\u0915 \u0916\u093c\u093e\u0938 \u0935\u094d\u092f\u0935\u0938\u094d\u0925\u093e&nbsp;<\/p>",
+            "additionalCourses": [
+                "695f713464de4499a93dcbd4"
+            ],
+            "purchased": false,
+            "isBlocked": false
+        },
+        {
+            "_id": "697a073adf7e6d81153bd909",
+            "name": "\u0909\u0921\u093c\u093e\u0928 \u092c\u0948\u091a - Class 9th Full Course 2026-27",
+            "strikeoutPrice": 699,
+            "courseImage": "https:\/\/image-store.blr1.cdn.digitaloceanspaces.com\/courses\/images\/1769609754058_66.png",
+            "packages": [
+                {
+                    "price": 599,
+                    "durationInMonths": 12,
+                    "isDefault": true,
+                    "_id": "69c3926538fab5550e79213b"
+                }
+            ],
+            "courseDescription": "<p>\u2705 \u092c\u093f\u0939\u093e\u0930 \u0915\u0947 \u0909\u0924\u094d\u0915\u0943\u0937\u094d\u091f \u0936\u093f\u0915\u094d\u0937\u0915\u094b\u0902 \u0915\u0940 \u091f\u0940\u092e&nbsp;<\/p><p>\u2705 \u092a\u094d\u0930\u0924\u094d\u092f\u0947\u0915 \u0935\u093f\u0937\u092f\u094b\u0902 \u0915\u093e \u0905\u0932\u0917 \u0905\u0932\u0917 live class&nbsp;<\/p><p>\u2705 \u092a\u094d\u0930\u0924\u094d\u092f\u0947\u0915 \u0935\u093f\u0937\u092f\u094b\u0902 \u0915\u093e special \u0928\u094b\u091f\u094d\u0938&nbsp;<\/p><p>\u2705 \u0939\u093er \u090f\u0915 \u0935\u093f\u0937\u092f \u092e\u0947\u0902 \u0938\u093e\u092a\u094d\u0924\u093e\u0939\u093f\u0915 \u091f\u0947\u0938\u094d\u091f \u0938\u0940\u0930\u0940\u091c&nbsp;<\/p><p>\u2705 doubt counter \u0915\u0940 \u090f\u0915 \u0916\u093c\u093e\u0938 \u0935\u094d\u092f\u0935\u0938\u094d\u0925\u093e&nbsp;<\/p>",
+            "additionalCourses": [
+                "695e8a9f64de4499a93ca2fc"
+            ],
+            "purchased": false,
+            "isBlocked": false
+        },
+        {
+            "_id": "695f7a0d64de4499a93dd2a9",
+            "name": "Uday Batch - CLASS 12TH ENGLISH MEDIUM ( SCIENCE )",
+            "strikeoutPrice": 4999,
+            "courseDescription": "<p>10th Crash Course For 2026 Exam<\/p>",
+            "courseImage": "https:\/\/image-store.blr1.cdn.digitaloceanspaces.com\/courses\/images\/1767864845403_79566367e0ba45f9b18751221693d37f.png",
+            "packages": [
+                {
+                    "price": 999,
+                    "exactStartDate": "2026-01-28T00:00:00.000Z",
+                    "exactEndDate": "2026-01-01T00:00:00.000Z",
+                    "isDefault": true,
+                    "_id": "69ce7e8166dbf32570aacad7"
+                },
+                {
+                    "price": 1299,
+                    "durationInMonths": 12,
+                    "isDefault": false,
+                    "_id": "69ce7e8166dbf32570aacad8"
+                }
+            ],
+            "additionalCourses": [],
+            "purchased": false,
+            "isBlocked": false
+        },
+        {
+            "_id": "69d254f9d39eaab65a925dc1",
+            "name": "\u0938\u092b\u0932\u0924\u093e \u092c\u0948\u091a - 11th Science Batch 2026-27",
+            "strikeoutPrice": 2999,
+            "courseImage": "https:\/\/image-store.blr1.cdn.digitaloceanspaces.com\/courses\/images\/1775398955999_118206.jpg",
+            "packages": [
+                {
+                    "price": 1449,
+                    "durationInMonths": 12,
+                    "isDefault": true,
+                    "_id": "6a0de135d89aa7db1a24c155"
+                }
+            ],
+            "additionalCourses": [],
+            "purchased": false,
+            "isBlocked": false
+        },
+        {
+            "_id": "69d254066641ce574c8171e3",
+            "name": "\u0938\u092b\u0932\u0924\u093e \u092c\u0948\u091a - 11th Science Batch English Medium 2026-27",
+            "strikeoutPrice": 2900,
+            "courseImage": "https:\/\/image-store.blr1.cdn.digitaloceanspaces.com\/courses\/images\/1775392009105_class 11th new batch poster for english medium hd.jpg",
+            "packages": [
+                {
+                    "price": 1449,
+                    "durationInMonths": 12,
+                    "isDefault": true,
+                    "_id": "69d3dd890ac9ebda27cda328"
+                }
+            ],
+            "additionalCourses": [],
+            "purchased": false,
+            "isBlocked": false
+        },
+        {
+            "_id": "69b6a989050250fc29633466",
+            "name": "\u0935\u093er\u0926\u093e\u0928 \u092c\u0948\u091a - 12th Up Board Batch 2026-27",
+            "strikeoutPrice": 4499,
+            "courseImage": "https:\/\/image-store.blr1.cdn.digitaloceanspaces.com\/courses\/images\/1776529508153_125736.jpg",
+            "packages": [
+                {
+                    "price": 799,
+                    "durationInMonths": 12,
+                    "isDefault": true,
+                    "_id": "6a0de1cd796a8f474b3ac89b"
+                }
+            ],
+            "additionalCourses": [],
+            "purchased": false,
+            "isBlocked": false
+        },
+        {
+            "_id": "699ee30a545ca6af28270d88",
+            "name": "\u0938\u093e\u0930\u094d\u0925\u0915 \u092c\u0948\u091a - Polytechnic Batch 2026",
+            "strikeoutPrice": 999,
+            "courseImage": "https:\/\/image-store.blr1.cdn.digitaloceanspaces.com\/courses\/images\/1777435476451_131134.jpg",
+            "packages": [
+                {
+                    "price": 299,
+                    "durationInMonths": 6,
+                    "isDefault": true,
+                    "_id": "69f18354e5d0ffbd9f395ad1"
+                }
+            ],
+            "additionalCourses": [],
+            "purchased": false,
+            "isBlocked": false
+        },
+        {
+            "_id": "69948967257aa65f3cebce73",
+            "name": "Vardaan Batch- 12th Science English Medium Batch 2026-27",
+            "strikeoutPrice": 3499,
+            "courseImage": "https:\/\/image-store.blr1.cdn.digitaloceanspaces.com\/courses\/images\/1771342183519_88505.jpg",
+            "packages": [
+                {
+                    "price": 1749,
+                    "durationInMonths": 12,
+                    "isDefault": true,
+                    "_id": "69ce7ecc514f1efe1adbb7c4"
+                }
+            ],
+            "additionalCourses": [
+                "695f7a0d64de4499a93dd2a9"
+            ],
+            "purchased": false,
+            "isBlocked": false
+        },
+        {
+            "_id": "696f785373cd1e3b3306170c",
+            "name": "\u0935\u093er\u0926\u093e\u0928 \u092c\u0948\u091a - 12th Science Batch 2026-27",
+            "strikeoutPrice": 3900,
+            "courseDescription": "<p>\u0935\u093er\u0926\u093e\u0928 \u092c\u0948\u091a - 12th Science Batch 2026-27<\/p>",
+            "courseImage": "https:\/\/image-store.blr1.cdn.digitaloceanspaces.com\/courses\/images\/1768920396560_sc.jpg",
+            "packages": [
+                {
+                    "price": 1749,
+                    "durationInMonths": 12,
+                    "isDefault": true,
+                    "_id": "69d255bbd39eaab65a940511"
+                }
+            ],
+            "additionalCourses": [
+                "695f754164de4499a93dcfde"
+            ],
+            "purchased": false,
+            "isBlocked": false
+        },
+        {
+            "_id": "69d2558bb197cb3b2106bdc8",
+            "name": "\u0938\u092b\u0932\u0924\u093e \u092c\u0948\u091a - 11th Arts Batch 2026-27",
+            "strikeoutPrice": 2999,
+            "courseImage": "https:\/\/image-store.blr1.cdn.digitaloceanspaces.com\/courses\/images\/1775392139483_class 11th new batch poster for arts hd.jpg",
+            "packages": [
+                {
+                    "price": 1449,
+                    "durationInMonths": 12,
+                    "isDefault": true,
+                    "_id": "6a0de152dc4c10541279b763"
+                }
+            ],
+            "additionalCourses": [],
+            "purchased": false,
+            "isBlocked": false
+        },
+        {
+            "_id": "696f7abc73cd1e3b3315f095",
+            "name": "\u0935\u093er\u0926\u093e\u0928 \u092c\u0948\u091a - 12th Arts Batch 2026-27",
+            "strikeoutPrice": 3999,
+            "courseDescription": "<p><span style=\"color:hsl(0, 75%, 60%);\"><strong>\u0935\u093er\u0926\u093e\u0928 \u092c\u0948\u091a - 12th Arts Batch 2026-27<\/strong><\/span><\/p><p>&nbsp;<\/p><p>\u2705 \u092c\u093f\u0939\u093e\u0930 \u0915\u0947 \u0909\u0924\u094d\u0915\u0943\u0937\u094d\u091f \u0936\u093f\u0915\u094d\u0937\u0915\u094b\u0902 \u0915\u0940 \u091f\u0940\u092e&nbsp;<\/p><p>\u2705 \u092a\u094d\u0930\u0924\u094d\u092f\u0947\u0915 \u0935\u093f\u0937\u092f\u094b\u0902 \u0915\u093e \u0905\u0932\u0917 \u0905\u0932\u0917 live class&nbsp;<\/p><p>\u2705 \u092a\u094d\u0930\u0924\u094d\u092f\u0947\u0915 \u0935\u093f\u0937\u092f\u094b\u0902 \u0915\u093e special \u0928\u094b\u091f\u094d\u0938&nbsp;<\/p><p>\u2705 \u0939\u093er \u090f\u0915 \u0935\u093f\u0937\u092f \u092e\u0947\u0902 \u0938\u093e\u092a\u094d\u0924\u093e\u0939\u093f\u0915 \u091f\u0947\u0938\u094d\u091f \u0938\u0940\u0930\u0940\u091c&nbsp;<\/p><p>\u2705 doubt counter \u0915\u0940 \u090f\u0915 \u0916\u093c\u093e\u0938 \u0935\u094d\u092f\u0935\u0938\u094d\u0925\u093e&nbsp;<\/p>",
+            "courseImage": "https:\/\/image-store.blr1.cdn.digitaloceanspaces.com\/courses\/images\/1768920320491_vard.jpg",
+            "packages": [
+                {
+                    "price": 1749,
+                    "durationInMonths": 12,
+                    "isDefault": true,
+                    "_id": "69d255daa5bb08f53d181cf0"
+                }
+            ],
+            "additionalCourses": [
+                "695f776964de4499a93dd154"
+            ],
+            "purchased": false,
+            "isBlocked": false
+        }
+    ]
+}
