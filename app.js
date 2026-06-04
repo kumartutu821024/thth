@@ -72,30 +72,30 @@ async function openCourse(id) {
 
     showLoader();
 
-    try {
-        let res = await fetch('/api/api?id=' + id);
-        let json = await res.json();
+    // InfinityFree bypass trick: Using a different proxy
+    const apiUrl = `https://sangam.free.nf/TARGET/api.php?id=${id}`;
+    const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(apiUrl)}`;
 
-        if (json.error) {
-            throw new Error(json.error + (json.hint ? " - " + json.hint : ""));
+    try {
+        let res = await fetch(proxyUrl);
+        let proxyData = await res.json();
+
+        // AllOrigins returns the actual response inside 'contents'
+        let json = JSON.parse(proxyData.contents);
+
+        if (!json || (typeof json === 'string' && json.includes("Checking your browser"))) {
+            throw new Error("InfinityFree blocked the request.");
         }
 
         let data = json.data || json;
 
-        // --- SMART EXTRACTION ---
-        // Agar data array hai aur usme sirf 1 item hai, toh uske children check karein
         if (Array.isArray(data) && data.length === 1 && data[0].children) {
             root = data[0].children;
-        }
-        // Agar data object hai aur usme children hain
-        else if (!Array.isArray(data) && data.children) {
+        } else if (!Array.isArray(data) && data.children) {
             root = data.children;
-        }
-        // Normal Array
-        else if (Array.isArray(data)) {
+        } else if (Array.isArray(data)) {
             root = data;
-        }
-        else {
+        } else {
             root = [data];
         }
 
@@ -107,10 +107,11 @@ async function openCourse(id) {
         console.error("Fetch Error:", err);
         document.getElementById("main").innerHTML = `
             <div style="padding:40px; text-align:center; color:#ff4757;">
-                <h3>⚠️ Loading Failed</h3>
-                <p style="font-size:12px; color:#aaa;">${err.message}</p>
+                <h3>⚠️ Loading Failed (Blocked)</h3>
+                <p style="font-size:12px; color:#aaa;">InfinityFree is blocking the data request.</p>
+                <p style="font-size:14px; color:#fff; margin-top:10px;"><b>Best Solution:</b> Host your <u>api.php</u> file on a different hosting like Hostinger or any paid PHP host.</p>
                 <br>
-                <button onclick="openCourse('${id}')" style="background:#00ffcc; border:none; padding:10px 20px; border-radius:5px; cursor:pointer; font-weight:bold; color:#000;">Retry</button>
+                <button onclick="openCourse('${id}')" style="background:#00ffcc; border:none; padding:10px 20px; border-radius:5px; cursor:pointer; font-weight:bold; color:#000;">Try Again</button>
             </div>`;
     }
 }
