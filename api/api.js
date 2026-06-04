@@ -9,17 +9,17 @@ export default async function handler(req, res) {
         "Accept": "application/json, text/plain, */*",
         "Accept-Language": "en-US,en;q=0.9",
         "Referer": "https://sangam.free.nf/",
-        "Cache-Control": "no-cache"
+        "Cache-Control": "no-cache",
+        "Connection": "keep-alive"
       }
     });
 
     const text = await response.text();
 
-    // Check if the response is actually JSON or the 'Javascript Required' error page
-    if (text.includes("document.cookie") || text.includes("Checking your browser")) {
+    if (text.includes("document.cookie") || text.includes("Checking your browser") || text.includes("Javascript Required")) {
        return res.status(503).json({
-         error: "API provider is blocking the request with a Javascript challenge.",
-         hint: "InfinityFree often blocks server-side requests. Consider moving api.php to a professional host like Hostinger or a VPS."
+         error: "API provider (InfinityFree) is blocking Vercel.",
+         hint: "InfinityFree doesn't allow server-side data fetching. Please move api.php to Hostinger or any paid hosting."
        });
     }
 
@@ -29,9 +29,9 @@ export default async function handler(req, res) {
       res.setHeader('Content-Type', 'application/json');
       res.status(200).json(data);
     } catch (parseError) {
-      res.status(500).json({ error: "API returned invalid JSON", raw: text.substring(0, 500) });
+      res.status(500).json({ error: "API returned non-JSON response", preview: text.substring(0, 200) });
     }
   } catch (error) {
-    res.status(500).json({ error: "Failed to connect to API", details: error.message });
+    res.status(500).json({ error: "Connection Failed", details: error.message });
   }
 }
