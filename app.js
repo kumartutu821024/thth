@@ -67,7 +67,7 @@ async function showCourse() {
 // 🚀 Open Course
 async function openCourse(id) {
     courseId = id;
-    document.getElementById("title").innerText = "Categories";
+    document.getElementById("title").innerText = "Loading Subjects...";
     document.getElementById("backBtn").style.display = "inline";
 
     showLoader();
@@ -76,25 +76,30 @@ async function openCourse(id) {
         let res = await fetch('/api/api?id=' + id);
         let json = await res.json();
 
+        // Handle the specific structure of your API
         let data = json.data || json;
 
-        // Agar data array nahi hai (ek single object hai), toh uske children check karein
-        if (!Array.isArray(data)) {
-            if (data.children && data.children.length > 0) {
-                root = data.children;
-            } else {
-                root = [data]; // Single item array
-            }
-        } else {
+        if (data.children && Array.isArray(data.children)) {
+            // Your API returns a root object with subjects in 'children'
+            root = data.children;
+        } else if (Array.isArray(data)) {
             root = data;
+        } else {
+            root = [data];
         }
 
+        document.getElementById("title").innerText = "All Subjects";
         renderList(root);
         historyStack = [];
         updateURL();
     } catch (err) {
-        console.error("Error loading subjects:", err);
-        document.getElementById("main").innerHTML = `<div style="padding:20px; text-align:center;">❌ Failed to load subjects. Please check if your API host is blocking the request.</div>`;
+        console.error("Fetch Error:", err);
+        document.getElementById("main").innerHTML = `
+            <div style="padding:40px; text-align:center; color:#ff4757;">
+                <h3>Oops! Subjects not loading.</h3>
+                <p>The API at sangam.free.nf might be blocking the request.</p>
+                <button onclick="openCourse('${id}')" style="background:#00ffcc; border:none; padding:10px 20px; border-radius:5px; cursor:pointer; font-weight:bold;">Try Again</button>
+            </div>`;
     }
 }
 
