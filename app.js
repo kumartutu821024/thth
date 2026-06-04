@@ -72,14 +72,30 @@ async function openCourse(id) {
 
     showLoader();
 
-    let res = await fetch('/api/api?id=' + id);
-    let json = await res.json();
+    try {
+        let res = await fetch('/api/api?id=' + id);
+        let json = await res.json();
 
-    root = json.data || json;
-    renderList(root);
+        let data = json.data || json;
 
-    historyStack = [];
-    updateURL();
+        // Agar data array nahi hai (ek single object hai), toh uske children check karein
+        if (!Array.isArray(data)) {
+            if (data.children && data.children.length > 0) {
+                root = data.children;
+            } else {
+                root = [data]; // Single item array
+            }
+        } else {
+            root = data;
+        }
+
+        renderList(root);
+        historyStack = [];
+        updateURL();
+    } catch (err) {
+        console.error("Error loading subjects:", err);
+        document.getElementById("main").innerHTML = `<div style="padding:20px; text-align:center;">❌ Failed to load subjects. Please check if your API host is blocking the request.</div>`;
+    }
 }
 
 // 🔁 Render List
